@@ -16,6 +16,7 @@ io.on("connect", socket => {
 
     });
     socket.on('join-room', room => {
-        socket.join(room)
+        socket.join(room);
+        socket.to(room).emit('joined-message', socket.id)
     })
 })
