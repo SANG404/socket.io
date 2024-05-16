@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Starter Snowpack App" />
+    <title>Starter Snowpack App</title>
+    <style>
+        .whatsapp-message .send {
+            background-color: #dcf8c6; /* Light green background color */
+            border-radius: 15px; /* Rounded corners */
+            border: 1px solid #a9d18e; /* Light green border */
+            padding: 10px 15px; /* Padding inside the div */
+            max-width: 70%; /* Limiting width to prevent it from stretching too much */
+            margin-bottom: 10px; /* Margin at the bottom for spacing between messages */
+        }
+        .whatsapp-message .receive {
+            background-color: #ffffff; /* White background color */
+            border-radius: 15px; /* Rounded corners */
+            border: 1px solid #ededed; /* Light gray border */
+            padding: 10px 15px; /* Padding inside the div */
+            max-width: 70%; /* Limiting width to prevent it from stretching too much */
+            margin-bottom: 10px; /* Margin at the bottom for spacing between messages */
+            text-align: left; /* Align text to the left for received messages */
+        }
+    </style>
+  </head>
+  <body>
+    <h1>DGC chat group</h1>
+    <form name="frmChat" id="frmChat">
+        <div id="chatarea" style="margin-bottom: 200px;" class="whatsapp-message">
+        </div>
+        <div id="sendBox">
+            <input type="text" name="txtMsgBox" id="txtMsgBox">
+            <input type="submit">
+        </div>
+    </form>
+  </body>
+  <script src="script.js" type="module"></script>
+</html>
