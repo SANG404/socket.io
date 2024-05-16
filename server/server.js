@@ -6,7 +6,16 @@ const io = require('socket.io')(3000, {
 
 io.on("connect", socket => {
     console.log(socket.id);
-    socket.on('sendMessage', msg => {
-        socket.broadcast.emit('receive-message', msg)
+    socket.on('sendMessage', (msg, room) => {
+        if(room === ''){
+            socket.broadcast.emit('receive-message', msg)
+        }
+        else{
+            socket.to(room).emit('receive-message', msg)
+        }
+
+    });
+    socket.on('join-room', room => {
+        socket.join(room)
     })
 })
