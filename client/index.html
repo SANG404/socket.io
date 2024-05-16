@@ -25,16 +25,22 @@
         }
     </style>
   </head>
+  <script src="script.js" type="module"></script>
   <body>
     <h1>DGC chat group</h1>
+    <p id="room"></p>
     <form name="frmChat" id="frmChat">
         <div id="chatarea" style="margin-bottom: 200px;" class="whatsapp-message">
         </div>
         <div id="sendBox">
             <input type="text" name="txtMsgBox" id="txtMsgBox">
-            <input type="submit">
+            <input type="submit" value="Send">
+            </br>
+            </br>
+            <input type="text" name="txtRoom" id="txtRoom">
+            <input type="button" value="Join Room" id="btnRoom">
+            <input type="hidden" name="roomId" id="roomId">
         </div>
     </form>
   </body>
-  <script src="script.js" type="module"></script>
 </html>
