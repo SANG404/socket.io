@@ -1,0 +1,29 @@
+{
+  "name": "bdm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/checkbox": "^2.0.25",
+    "@nextui-org/react": "^2.2.10",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "https": "^1.0.0",
+    "mammoth": "^1.7.2",
+    "next": "14.2.4",
+    "next-auth": "^4.24.7",
+    "path": "^0.12.7",
+    "react": "^18",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18",
+    "sass": "^1.72.0",
+    "socket.io-client": "^4.7.5",
+    "xlsx": "^0.18.5"
+  }
+}
