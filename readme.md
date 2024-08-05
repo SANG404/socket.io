@@ -9,7 +9,7 @@ JWT_SECRET=#your secret code#
 # Server port
 PORT=8086
 
-for starting back end server:
+# For starting back end server:
 cd server
 npm start
 
